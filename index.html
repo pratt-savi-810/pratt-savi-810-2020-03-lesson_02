@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0a8a910979b146ae8bc570eb71c9526c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0a8a910979b146ae8bc570eb71c9526c" ></div>
+        
+</body>
+<script>    
+    
+            var map_0a8a910979b146ae8bc570eb71c9526c = L.map(
+                "map_0a8a910979b146ae8bc570eb71c9526c",
+                {
+                    center: [45.372, -121.6972],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a473d6d8610d420686d142cc349b6ad2 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0a8a910979b146ae8bc570eb71c9526c);
+        
+    
+            var marker_2cb41f95d7834647b69a6b6b77e31a9e = L.marker(
+                [63.069, -151.0063],
+                {}
+            ).addTo(map_0a8a910979b146ae8bc570eb71c9526c);
+        
+    
+        var popup_d2f5734d6584454881fb1d0f3800d7a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42e1672c88af4aecb729d1193ff090dc = $(`<div id="html_42e1672c88af4aecb729d1193ff090dc" style="width: 100.0%; height: 100.0%;"><i>Denali</i></div>`)[0];
+            popup_d2f5734d6584454881fb1d0f3800d7a3.setContent(html_42e1672c88af4aecb729d1193ff090dc);
+        
+
+        marker_2cb41f95d7834647b69a6b6b77e31a9e.bindPopup(popup_d2f5734d6584454881fb1d0f3800d7a3)
+        ;
+
+        
+    
+    
+            var marker_3314f46344114a46bd9031bc928a308d = L.marker(
+                [36.5786, -118.292],
+                {}
+            ).addTo(map_0a8a910979b146ae8bc570eb71c9526c);
+        
+    
+        var popup_6ffb4190c33e446c9763fdebfde8c5d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d01b986dffaa4bd8992ac23ff712410e = $(`<div id="html_d01b986dffaa4bd8992ac23ff712410e" style="width: 100.0%; height: 100.0%;"><b>Mount Whitney</b></div>`)[0];
+            popup_6ffb4190c33e446c9763fdebfde8c5d6.setContent(html_d01b986dffaa4bd8992ac23ff712410e);
+        
+
+        marker_3314f46344114a46bd9031bc928a308d.bindPopup(popup_6ffb4190c33e446c9763fdebfde8c5d6)
+        ;
+
+        
+    
+</script>
